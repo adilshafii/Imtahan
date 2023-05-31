@@ -1,0 +1,117 @@
+header {
+  // start nav FreeShip
+  #freeShop {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(0, 0, 0);
+
+    .freeShop_mainDiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        color: #fff;
+        margin-bottom: 0;
+      }
+      .freeShop_links {
+        display: flex;
+        gap: 21px;
+        a {
+          color: #fff;
+          &:hover {
+            color: rgb(114, 38, 255);
+            transition: 500ms;
+          }
+        }
+      }
+    }
+  }
+  // end nav FreeShip
+
+  // start nav COZA
+  #cozaStore {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(174, 174, 174);
+    // position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    .cozaStore_mainDiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .cozaStore_cozaLinksDiv {
+        display: flex;
+        gap: 51px;
+        .cozaStore_links {
+          display: flex;
+          gap: 23px;
+          a {
+            color: black;
+            &:hover {
+              color: rgb(114, 38, 255);
+              transition: 500ms;
+            }
+          }
+        }
+      }
+      .cozaStore_iconDiv {
+        display: flex;
+        gap: 27px;
+        padding-left: 11px;
+        .bars {
+          font-size: 23px;
+          display: none;
+        }
+        a {
+          i {
+            font-size: 23px;
+          }
+          color: black;
+          &:hover {
+            color: rgb(114, 38, 255);
+            transition: 500ms;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    #freeShop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    #cozaStore {
+      .cozaStore_mainDiv {
+        .cozaStore_iconDiv {
+            gap: 15px;
+          a {
+            i {
+              font-size: 17px;
+            }
+          }
+          .bars {
+            display: block;
+          }
+        }
+
+        .cozaStore_cozaLinksDiv {
+          .cozaStore_links {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

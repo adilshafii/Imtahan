@@ -1,0 +1,23 @@
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+    .myContainer{
+        .payCardImgs{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 55px;
+                height: 27px;
+            }
+        }
+        .footer_endText{
+            padding-top: 13px;
+            display: flex;
+            justify-content: center;
+            p{
+                color: rgb(176, 176, 176);
+            }
+        }
+    }
+}

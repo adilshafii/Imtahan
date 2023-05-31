@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, ul, ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.myContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+header #freeShop {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(0, 0, 0);
+}
+header #freeShop .freeShop_mainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #freeShop .freeShop_mainDiv p {
+  color: #fff;
+  margin-bottom: 0;
+}
+header #freeShop .freeShop_mainDiv .freeShop_links {
+  display: flex;
+  gap: 21px;
+}
+header #freeShop .freeShop_mainDiv .freeShop_links a {
+  color: #fff;
+}
+header #freeShop .freeShop_mainDiv .freeShop_links a:hover {
+  color: rgb(114, 38, 255);
+  transition: 500ms;
+}
+header #cozaStore {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(174, 174, 174);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+header #cozaStore .cozaStore_mainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_cozaLinksDiv {
+  display: flex;
+  gap: 51px;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_cozaLinksDiv .cozaStore_links {
+  display: flex;
+  gap: 23px;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_cozaLinksDiv .cozaStore_links a {
+  color: black;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_cozaLinksDiv .cozaStore_links a:hover {
+  color: rgb(114, 38, 255);
+  transition: 500ms;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv {
+  display: flex;
+  gap: 27px;
+  padding-left: 11px;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv .bars {
+  font-size: 23px;
+  display: none;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv a {
+  color: black;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv a i {
+  font-size: 23px;
+}
+header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv a:hover {
+  color: rgb(114, 38, 255);
+  transition: 500ms;
+}
+
+@media screen and (max-width: 768px) {
+  header #freeShop {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv {
+    gap: 15px;
+  }
+  header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv a i {
+    font-size: 17px;
+  }
+  header #cozaStore .cozaStore_mainDiv .cozaStore_iconDiv .bars {
+    display: block;
+  }
+  header #cozaStore .cozaStore_mainDiv .cozaStore_cozaLinksDiv .cozaStore_links {
+    display: none;
+  }
+}
+#womenMen {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#womenMen .womenMen_mainDiv {
+  display: flex;
+  gap: 21px;
+}
+#womenMen .womenMen_mainDiv .womenMen_cards {
+  width: 33.3333333333%;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 5px;
+}
+#womenMen .womenMen_mainDiv .womenMen_cards .womenMen_cards__text h1 {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+#womenMen .womenMen_mainDiv .womenMen_cards .womenMen_cards__img p {
+  margin-left: 25px;
+}
+#womenMen .womenMen_mainDiv .womenMen_cards .womenMen_cards__img img {
+  height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  #womenMen .womenMen_mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  #womenMen .womenMen_mainDiv .womenMen_cards {
+    width: 100%;
+  }
+}
+#product {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+#product .productMaindiv {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+#product .productMaindiv .product_linksFilterDiv {
+  display: flex;
+  justify-content: space-between;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__links {
+  display: flex;
+  gap: 17px;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__links a {
+  color: gray;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__links a:hover {
+  color: black;
+  transition: 350ms;
+  text-decoration: underline;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__filter {
+  display: flex;
+  gap: 17px;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__filter .product_filter {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 111px;
+  height: 49px;
+  border-radius: 3px;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__filter .product_filter p {
+  margin: 0;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__filter .product_filter:hover {
+  background-color: rgb(114, 38, 255);
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__filter .product_search {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 111px;
+  height: 49px;
+  border-radius: 3px;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__filter .product_search p {
+  margin: 0;
+}
+#product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__filter .product_search:hover {
+  background-color: rgb(114, 38, 255);
+}
+
+@media screen and (max-width: 768px) {
+  #product .productMaindiv .product_linksFilterDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  #product .productMaindiv .product_linksFilterDiv .product_linksFilterDiv__links {
+    flex-wrap: wrap;
+  }
+}
+#manyCards {
+  width: 100%;
+  padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 37px;
+}
+#manyCards .manyCards_mainDiv {
+  display: flex;
+  gap: 25px;
+}
+#manyCards .manyCards_mainDiv .manyCards__cards {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+#manyCards .manyCards_mainDiv .manyCards__cards .manyCards__cards__likeDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#manyCards .manyCards_mainDiv .manyCards__cards .manyCards__cards__likeDiv p {
+  color: rgb(157, 156, 156);
+  margin: 0;
+}
+#manyCards button {
+  width: 165px;
+  height: 51px;
+  background-color: grey;
+  border: none;
+  border-radius: 42px;
+}
+#manyCards button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: 450ms;
+}
+
+@media screen and (max-width: 768px) {
+  #manyCards .manyCards_mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  #manyCards .manyCards_mainDiv .manyCards__cards {
+    width: 100%;
+  }
+}
+#carouselExample {
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #carouselExample {
+    padding-top: 130px;
+  }
+}
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: black;
+}
+footer .myContainer .payCardImgs {
+  display: flex;
+  justify-content: center;
+}
+footer .myContainer .payCardImgs img {
+  width: 55px;
+  height: 27px;
+}
+footer .myContainer .footer_endText {
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+}
+footer .myContainer .footer_endText p {
+  color: rgb(176, 176, 176);
+}/*# sourceMappingURL=main.css.map */

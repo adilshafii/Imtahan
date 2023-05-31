@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a,ul,ol{
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.myContainer{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 33px;
+    padding-right: 33px;
+}

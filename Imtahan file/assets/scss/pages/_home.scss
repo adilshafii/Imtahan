@@ -1,0 +1,185 @@
+// START WOMEN MEN card SEC
+#womenMen {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  .womenMen_mainDiv {
+    display: flex;
+    gap: 21px;
+    .womenMen_cards {
+      width: 33.33333333333%;
+      border: 1px solid rgba(168, 168, 168);
+      border-radius: 5px;
+      .womenMen_cards__text {
+        // height: 50px;
+        h1 {
+          margin-top: 25px;
+          margin-left: 25px;
+        }
+      }
+      .womenMen_cards__img {
+        p {
+          margin-left: 25px;
+        }
+        img {
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #womenMen {
+    .womenMen_mainDiv {
+      display: flex;
+      flex-direction: column;
+      .womenMen_cards {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// START PRODUCT SECTION
+
+#product {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  .productMaindiv {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    .product_linksFilterDiv {
+      display: flex;
+      justify-content: space-between;
+      .product_linksFilterDiv__links {
+        display: flex;
+        gap: 17px;
+        a {
+          color: gray;
+          &:hover {
+            color: black;
+            transition: 350ms;
+            text-decoration: underline;
+          }
+        }
+      }
+      .product_linksFilterDiv__filter {
+        display: flex;
+        gap: 17px;
+        .product_filter {
+          cursor: pointer;
+          @include center;
+          gap: 5px;
+          width: 111px;
+          height: 49px;
+          border-radius: 3px;
+          p {
+            margin: 0;
+          }
+          &:hover {
+            background-color: rgb(114, 38, 255);
+          }
+        }
+        .product_search {
+          cursor: pointer;
+          @include center;
+          gap: 5px;
+
+          width: 111px;
+          height: 49px;
+          border-radius: 3px;
+          p {
+            margin: 0;
+          }
+          &:hover {
+            background-color: rgb(114, 38, 255);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #product {
+    .productMaindiv {
+      .product_linksFilterDiv {
+        display: flex;
+        flex-direction: column;
+        .product_linksFilterDiv__links {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+// END PRODUCT SECTION
+
+// START MANY CARDS SEC
+
+#manyCards {
+  width: 100%;
+  padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 37px;
+  .manyCards_mainDiv {
+    display: flex;
+    gap: 25px;
+    .manyCards__cards {
+    //   border: 1px solid red;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+
+      .manyCards__cards__likeDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          color: rgb(157, 156, 156);
+          margin: 0;
+        }
+      }
+    }
+  }
+  button {
+    width: 165px;
+    height: 51px;
+    background-color: grey;
+    border: none;
+    border-radius: 42px ;
+    &:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        transition: 450ms;
+    }
+  }
+}
+
+// END MANY CARDS SEC
+
+@media screen and (max-width: 768px) {
+  #manyCards {
+    .manyCards_mainDiv {
+      display: flex;
+      flex-direction: column;
+      .manyCards__cards {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#carouselExample{
+    padding-top: 50px;
+}
+@media screen and (max-width: 768px){
+    #carouselExample{
+        padding-top: 130px;
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "information": [
+    {
+      "id": 1,
+      "Ad": "Jone",
+      "Soyad": "Mc Lirer",
+      "Yash": "22",
+      "png": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg"
+    },
+    {
+        "id": 2,
+        "Ad": "Kane",
+        "Soyad": "Ocoa",
+        "Yash": "32",
+        "png": "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg"
+      },
+      {
+        "id": 3,
+        "Ad": "Marry",
+        "Soyad": "Despory",
+        "Yash": "42",
+        "png": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg"
+      },
+      {
+        "id": 4,
+        "Ad": "David",
+        "Soyad": "Sussa",
+        "Yash": "52",
+        "png": "https://preview.colorlib.com/theme/cozastore/images/product-04.jpg.webp"
+      }
+  ]
+}
